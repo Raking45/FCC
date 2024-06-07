@@ -1,1 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
 
+       <nav id="navbar">
+        <header><h1><span class="nav-title">HTML5</span></h1></header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#what_is_html5">What is HTML5</a></li>
+            <li><a class="nav-link" href="#html_vs_html5">HTML vs HTML5</a></li>
+            <li><a class="nav-link" href="#how_to_use_html5">How to Use HTML5</a></li>
+            <li><a class="nav-link" href="#the_future_of_html5">The Future of HTML5</a></li>
+        </ul>
+       </nav>
+
+       <main id="main-doc">
+        <section class="main-section" id="introduction"><header><h1>Introduction</h1></header>
+            <article>
+                <p>
+                    HTML and HTML5 are both markup languages used to structure and present content on the web.  HTML is the latest version of HTML, and it brings many new improvements and features over previous versions of HTML.
+                </p>
+        </article>
+    </section>
+<br>
+        <section class="main-section" id="what_is_html5"><header><h1>What is HTML5</h1></header>
+            <article>
+                <p>
+                    HTML5 is an evolution of HTML that incorporates modern web technologies and standards.  HTML5 offers improved multimedia support by using new semantic elements that provide enhanced structure and accessibility, enhanced form controls, and powerful APIs for building more interactive and robust web applications.
+            </p>
+        </article>
+    </section>
+<br>
+        <section class="main-section" id="html_vs_html5"><header><h1>HTML vs HTML5</h1></header>
+            <article>
+                <p>
+                   <h4> HTML (Prior to HTML5)</h4>
+                </p>
+                <p>
+                    <ul>
+                        <li>Elements and Structure</li>
+                        <p>HTML uses elements like <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;table&gt;</code>, and others to structure content.  The structure was somewhat rigid and required additional elements for complex layouts.</p>
+                        <li>Multimedia Support</li>
+                        <p>Limited support for multimedia elements which often required third-party plugins like Flash to display audio, video and other multimedia content.</p>
+                        <li>Forms and Inputs</li>
+                        <p>Basic form elements with limited types of input fields.  More complex input validation and features had to be implemented with JavaScript.</p>
+                        <li>Browser Support</li>
+                        <p>Older versions of HTML had inconsistent support across different browser, leading to compatibility issues.</p>
+                        <li>Doctype Declaration</li>
+                        <p>Required a long and complex doctype declaration, like <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</code></p>
+                    </ul>
+                <p>
+                    <h4>HTML5</h4>
+                </p>
+                <p>
+                    <ul>
+                        <li>New Elements and Structures</li>
+                        <p>Introduces new semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;main&gt;</code> to provide more meaningful and accessible document structure.</p>
+                        <li>Multimedia Support</li>
+                        <p>Native support for audio and video elements using <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags, eliminating the need for third-party plugins.</p>
+                        <li>Forms and Input</li>
+                        <p>New input types like <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="date"&gt;</code>, <code>&lt;input type="url"&gt;</code>, <code>&lt;input type="number"&gt;</code>, <code>&lt;input type="range"&gt;</code>, and more.  Built-in validation and attributes like <code>'placeholder'</code>, <code>'required'</code>, and <code>'autofocus'</code> enhance form usability and accessibility.</p>
+                        <li>APIs and Enhancements</li>
+                        <p>Includes several new APIs and technologies such as:</p>
+                            <ul>
+                                <li>Canvas API</li>
+                                <p>Allows for drawing graphics on the fly via the <code>&lt;canvas&gt;</code>element.</p>
+                                <li>Geolocation API</li>
+                                <p>Enables location based services.</p>
+                                <li>Web Storage API</li>
+                                <p>Provides a way to store data locally on the user's device using <code>'localStorage'</code> and <code>'sessionStorage'</code>.</p>
+                                <li>Web Workers</li>
+                                <p>Allows for background scripts to improve performance.</p>
+                                <li>Offline Capabilities</li>
+                                <p>Using the Application Cache and Service Workers to enable offline functionality.</p>
+                            </ul>
+                        <li>Responsive Design</li>
+                        <p>Supports responsive design principles through media queries, allowing websites to adapt to different screen sizes and devices.</p>
+                        <li>Enhanced Accessibility</li>
+                        <p>Improved support for ARIA (Accessible Rich Internet Applications) and better semantic structure for assistive technologies.</p>
+                        <li>Simplified Doctype Declaration</li>
+                        <p>Simplified to <code>&lt;!DOCTYPE html&gt;</code>.</p>
+                        <li>Backward Compatibility</li>
+                        <p>HTML5 is designed to be backward compatible with older HTML versions, ensuring that existing web pages continue to work.</p>
+                    </ul>
+                </p>
+                </p>
+            </article>
+        </section>
+        <br>
+        <section class="main-section" id="how_to_use_html5"><header><h1>How to Use HTML5</h1></header>
+            <article>
+                <p>To start using HTML5 for your websites, it is recommended that you create an HTML template first that can later be used as a boilerplate for future projects.</p>
+                <p>A basic template or boilerplate may look like:</p>
+                <div><blockquote><code>&lt;DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0&gt;<br>
+                    &lt;meta http-equiv="X-UA_Compatible" content="ie=edge"&gt;<br>
+                    &lt;title&gt;HTML5 Boilerplate Example&lt;title&gt;<br>
+                    &lt;link rel="stylesheet" href="style.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;script src="index.js&gt;&lt;/script&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </code></blockquote></div>
+                <p>After a basic boilerplate has been created a user then can take advantage of HTML5 features and improvements to create well-structuresd, accessible, and interactive web pages.  The following is a brief list of key practices and steps that can be utilized in your HTML5 projects to create modern, accessible, and feature rich web pages.</p>
+                <ol>
+                    <li>Use the Simplified Doctype Declaration</li>
+                    <p>Start your HTML5 document with the simplified doctype declaration:</p>
+                    <div><blockquote><code>&lt;!DOCTYPE html&gt<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Title&lt;title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;!--Body Content --&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;</code></blockquote></div>
+                    <br>
+                    <li>Employ New Semantic Elements</li>
+                    <p>Use HTML5 semantic elements to structure your content.  These elements improve readability, SEO (Search Engine Optimization), and accessibility.</p>
+                    <div><blockquote><code>&lt;header&gt;
+                        &lt;h1&gt;Welcome to an HTML5 Website&lt;/h1&gt;<br>
+                        &lt;/header&gt;<br>
+                        &lt;nav&gt;<br>
+                        &lt;ul&gt;<br>
+                        &lt;li&gt;&lt;a href="home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li&gt;&lt;a href="about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;li&gt;&lt;a href="contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                        &lt;/nav&gt;<br>
+                        &lt;main&gt;<br>
+                        &lt;article&gt;<br>
+                        &lt;h2&gt;Article Title&lt;/h2&gt;<br>
+                        &lt;p&gt;This is the articles content area&lt;/p&gt;<br>
+                        &lt;/article&gt;<br>
+                        &lt;section&gt;<br>
+                        &lt;h3&gt;Section Title&lt;/h3&gt;<br>
+                        &lt;p&gt;This is a section within the main content.&lt;/p&gt;<br>
+                        &lt;/section&gt;<br>
+                        &lt;/main&gt;<br>
+                        &lt;aside&gt;<br>
+                        &lt;h3&gt;Related Information&lt;/h3&gt;<br>
+                        &lt;p&gt;Some additional information that is related to the main content.&lt;/p&gt;<br>
+                        &lt;/aside&gt;<br>
+                        &lt;footer&gt;<br>
+                        &lt;p&gt;&copy; 2024 My Website&lt;/p&gt;<br>
+                        &lt;/footer&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Integrate Multimedia Elements</li>
+                    <p>Use the <code>&lt;audio&gt;</code>and <code>&lt;video&gt;</code> elements for embedding media without third-party plugins.</p>
+                    <div><blockquote><code>&lt;video controls&gt;<br>
+                        &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                        Your browser does not support the video tag.<br>
+                        &lt;/video&gt;<br>
+                        <br>
+                        &lt;audio controls&gt;<br>
+                        &lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                        Your browser does not support the audio element.<br>
+                        &lt;/audio&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Enhance Forms with New Input Types and Attributes</li>
+                    <p>Take advantage of new input types and attributes to improve form usability and validation.</p>
+                    <div><blockquote><code>&lt;form action="/submit" method="post"&gt;<br>
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                    &lt;input type="text" id="name" name="name" required&gt;<br>
+                    <br>
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                    &lt;input type="email" id="email" name="email" required&gt;<br>
+                    <br>
+                    &lt;label for="birthday"&gt;Birthday:&lt;/label&gt;<br>
+                    &lt;input type="date" id="birthday" name="birthday"&gt;<br>
+                    <br>
+                    &lt;label for="quantity"&gt;Quantity:&lt;/label&gt;<br>
+                    &lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;<br>
+                    <br>
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                    &lt;/form&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Use the Canvas API for Graphics</li>
+                    <p>Utilize the <code>&lt;canvas&gt;</code> element for drawing graphics.</p>
+                    <div><blockquote><code>&lt;canvas id="myCanvas" width="200" height="200"&gt;&lt;/canvas&gt;<br>
+                    &lt;script&lt;<br>
+                    var canvas = document.getElementByID('myCanvas');<br>
+                    var context = canvas.getContext('2d');<br>
+                    context.fillStyle = 'green';<br>
+                    context.fillRect(10, 10, 150, 100);<br>
+                    &lt;/script&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Implement Geolocation</li>
+                    <p>Access the user's geographical location with Geolocation API.</p>
+                    <div><blockquote><code>&lt;button onclick="getLocation()"&gt;Get Location&lt;/button&gt;<br>
+                    &lt;p id="location"&gt;&lt;/p&gt;<br>
+                    &lt;script&gt;<br>
+                    function getLocation() {<br>
+                        if (navigator.geolocation) {<br>
+                            navigator.geolocation.getCurrentPosition(showPosition);<br>
+                        } else {<br>
+                            document.getElementById('location').innerHTML = "Geolocation is not supported by this browser.";<br>
+                        }<br>
+                    }<br>
+                    <br>
+                    function showPosition(position) {<br>
+                        document.getElementById('location').innerHTML=<br>
+                        "Latitude: " + position.coords.latitude +<br>
+                        "&lt;br&gt;Longitude: " + position.coords.longitude;<br>
+                    }<br>
+                    &lt;/script&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Optimize for Responsive Design</li>
+                    <p>Use the viewport meta tag and CSS media queries to create responsive layouts.</p>
+                    <div><blockquote><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    <br>
+                    &lt;style&gt;<br>
+                    body {<br>
+                        font-family: Arial, sans-serif;<br>
+                    }<br>
+                    .container {<br>
+                        width: 100;<br>
+                        max-width: 1200px;<br>
+                        margin: 0 auto;<br>
+                    }<br>
+                    @media (max-width: 600px) {<br>
+                        .container {<br>
+                        padding: 10px;<br>
+                        }<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    <br>
+                    &lt;div class="container"&gt;<br>
+                    &lt;h1&gt;Responsive Design&lt;/h1&gt;<br>
+                    &lt;p&gt;This layout adjust to different screen sizes.&lt;/p&gt;<br>
+                    &lt;/div&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Store Data Locally with Web Storage API</li>
+                    <p>Use <code>'localStorage'</code> and <code>'sessionStorage'</code> to store data on the client side.</p>
+                    <div><blockquote><code>&lt;button onclick="storeData()"&gt;Store Data&lt;/button&gt;<br>
+                    &lt;button onclick="retrieveData()"&gt;Retrieve Data&lt;/button&gt;<br>
+                    &lt;p id="storeData"&gt;&lt;/p&gt;<br>
+                    <br>
+                    &lt;script&gt;<br>
+                    function storeData() {<br>
+                        localStorage.setItem('myData', 'This is some data.');<br>
+                    }<br>
+                    <br>
+                    function retrieveData() {<br>
+                        var data = localStorage.getItem('myData');<br>
+                        document.getElementById('storageData').innerText = data;<br>
+                    }<br>
+                    &lt;/script&gt;
+                    </code></blockquote></div>
+                    <br>
+                    <li>Ensure Accessibility</li>
+                    <p>Use ARIA roles and attributes to enhance accessiblity.</p>
+                    <div><blockquote><code>&lt;button aria-label="Close" onclick="closeDialog()"&gt;X&lt;/button&gt;<br>
+                    <br>
+                    &lt;script&gt;<br>
+                    function closeDialog() {<br>
+                        // Close the dialog functionality<br>
+                    }<br>
+                    &lt;/script&gt;
+                    </code></blockquote></div>
+                    <br>
+                </ol>
+            </article>
+        </section>
+        <section class="main-section" id="the_future_of_html5"><header><h1>The Future of HTML5</h1></header>
+            <article>
+                <p>The future of HTML5 is extremely promising as it continues to evolve and adapt to the rapidly changing landscape of web development.  Several current trends and developments will continue to shape the future of HTML5 as can be seen in the following current list and summaries of key trends and developments:</p>
+                <ol>
+                    <li>Continued Standardization and Evolution</li>
+                    <ul>
+                        <li>Incremental Updates:</li>
+                        <p>HTML5 is continuously being refined and updated.  The W3C (World Wide Web Consortium) and WHATWG (Web Hypertext Application Technology Working Group) are actively working on the living standard, ensuing it adapts to new requirements and technologies.</p>
+                        <li>New Elements and Attributes</li>
+                        <p>Expect to see the introduction of new elements and attributes that cater to emerging needs in web development, making HTML5 more powerful and versatile.</p>
+                    </ul>
+                    <li>Enhanced Performance and Efficiency</li>
+                    <ul>
+                        <li>Improved APIs</li>
+                        <p>Enhanced APIs for better performance, efficiency, and security.  This includes advancements in WebAssembly API, which allows for high-performance applications on the web.</p>
+                        <li>Optimization for Mobile and Low-Bandwidth Environments</li>
+                        <p>Focus on making HTML5 more efficient for mobile devices and areas with limited internet access, ensuring better performance across all platforms.</p>
+                    </ul>
+                    <li>Greater Integration with JavaScript and CSS</li>
+                    <ul>
+                        <li>Seamless Integration</li>
+                        <p>HTML5 will continue to integrate more seamlessly with JavaScript and CSS, allowing for richer and more dynamic user experiences</p>
+                        <li>Component-Based Architecture</li>
+                        <p>The rise of web components, facilitated by HTML5, will lead to code that is modular and reusable, simplifying development and maintenance.</p>
+                    </ul>
+                    <li>Advancements in Web Graphics and Multimedia</li>
+                    <ul>
+                        <li>WebGL and Canvas Enhancements</li>
+                        <p>Continued improvements in WebGL and Canvas API will enable more complex graphics and animations directly in the browser.</p>
+                        <li>Virtual Augmented Reality</li>
+                        <p>HTML5 will play a crucial role in the development and deployment of VR and AR experiences on the web through technologies such as WebXR.</p>
+                    </ul>
+                    <li>Progressive Web Apps (PWAs)</li>
+                    <ul>
+                        <li>Broader Adoption</li>
+                        <p>PWAs, which use HTML5 along with JavaScript and CSS, will become more prevalent, offering a native app-like experience with the benefits of web technology.</p>
+                        <li>Enhanced Capabilities</li>
+                        <p>HTML5 will continue to enhance the capabilities of PWAs, making them more powerful and versatile.</p>
+                    </ul>
+                    <li>Improved Accessibility and Internationalization</li>
+                    <ul>
+                        <li>Better ARIA Support</li>
+                        <p>Ongoing improvements in ARIA (Accessible Rich Internet Applications) will ensure that web content is accessible to all users, including those with disabilities.</p>
+                        <li>Support for More Languages and Cultures</li>
+                        <p>Enhanced support for internationalization will make it easier to create websites that cater to a global audience.</p>
+                    </ul>
+                    <li>Security Enhancements</li>
+                    <ul>
+                        <li>Stricter Security Measures</li>
+                        <p>HTML5 incorporates stricter security features and protocols that protects users and their data from emerging threats.</p>
+                        <li>Secure API Integrations</li>
+                        <p>Improved security in API integrations will ensure safer interactions between web applications and external services.</p>
+                    </ul>
+                    <li>Development Tools and Frameworks</li>
+                    <ul>
+                        <li>Advanced Development Tools</li>
+                        <p>More sophisticated tools and frameworks will emerge, simplifying the development process and enhancing overall productivity.</p>
+                        <li>Better Browser Developer Tools</li>
+                        <p>Enhanced browser developer tools will provide deeper insights and increased control over HTML5 applications.</p>
+                    </ul>
+                    <li>IoT and Smart Devices</li>
+                    <ul>
+                        <li>HTML5 in IoT</li>
+                        <p>HTML5 will be increasingly used in development of IoT (Internet of Things) applications, providing a standardized way to create and interact with smart devices.</p>
+                    </ul>
+                    <li>Community and Open Source Contributions</li>
+                    <ul>
+                        <li>Community Involvement</li>
+                        <p>The active involvement of the developer community and open-source contributions will continue to drive the evolution of HTML5, ensuing it meets the needs of users and developers alike.</p>
+                    </ul>
+                </ol> 
+            </article>
+        </section>
+       </main> 
+    </body>
+    <footer>
+        <p>&copy; 2024 Robert A. King</p>
+    </footer>
+</html>
